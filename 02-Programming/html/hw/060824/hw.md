@@ -1,0 +1,2 @@
+1) Create your own website, your website should contain at least 10 different elements in the body, use - https://www.w3schools.com/html/html_paragraphs.asp
+2) Create a list of items in html, the items should be list of places you have visited/liked in the past 10 years
