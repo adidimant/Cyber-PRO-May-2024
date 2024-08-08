@@ -30,10 +30,6 @@ body {
   }
 }
 
-p {
-  line-height: 1.5;
-}
-
 #mainP {
   display: flex;
   border: 1px solid black;
@@ -41,6 +37,7 @@ p {
   padding: 10px;
   width: 50vw;
   color: black;
+  line-height: 1.5;
 }
 
 #botD {
@@ -73,11 +70,31 @@ p {
     text-decoration: none;
     color: black;
     transition: color 0.3s, font-size 0.3s;
+  }
 
-    &:hover {
-      color: white;
-      font-size: 23px;
-    }
+  #java:hover {
+    color: #ff6f00;
+    font-size: 23px;
+  }
+
+  #html:hover {
+    color: #e44d26;
+    font-size: 23px;
+  }
+
+  #css:hover {
+    color: #1572b6;
+    font-size: 23px;
+  }
+
+  #javascript:hover {
+    color: #f7df1e;
+    font-size: 23px;
+  }
+
+  #chatgpt:hover {
+    color: #10a37f;
+    font-size: 23px;
   }
 
   #iconD {
