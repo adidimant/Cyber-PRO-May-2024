@@ -1,0 +1,40 @@
+body {
+
+}
+
+a {
+  color: rgb(27, 132, 72);
+}
+
+.my-unordered-list-clean {
+  list-style-type: none;
+  margin: 0;
+  height: 120px;
+}
+
+.my-unordered-list {
+  list-style-type: square;
+  margin: 0;
+  height: 120px;
+}
+
+.my-unordered-list li {
+  color: navy;
+  height: 15px;
+  font-size: 15px;
+}
+
+#my-rounded-element {
+  border: 3px dotted #0a2731;
+  width: 400px;
+}
+
+#my-rounded-element img {
+  width: 100%;
+}
+
+.game_wallpaper {
+  width: 900px;
+  height: 600px;
+  background-image: url("./assets/grand-theft-auto-6.avif");
+}
