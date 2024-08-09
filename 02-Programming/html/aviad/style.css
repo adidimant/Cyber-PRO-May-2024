@@ -1,0 +1,48 @@
+.top-p{ 
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+.top-h{
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.top-h2{
+    color: chartreuse;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-color: rgb(43, 8, 8);
+}
+.color-yellow{
+    color: rgb(208, 255, 0);
+    
+}
+.color-green{
+    color: rgba(9, 255, 0, 0.849);
+    
+}
+.color-orange{
+    color: rgb(255, 0, 0);
+    
+}
+.color-blue{
+    color: rgb(0, 26, 255);
+    
+}
+.color-red{
+    color: rgba(255, 0, 0, 0.863);
+    
+}
+dialog{
+    background-color: chocolate;
+    height: 200px;
+    width: 200px;
+    button{
+        width: 100%;
+
+        &:hover {
+            color: red;
+        }
+    }
+}
