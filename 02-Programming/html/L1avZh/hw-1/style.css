@@ -20,6 +20,10 @@ body {
     color: black;
   }
 
+  .my-special-class {
+    color: yellow;
+  }
+
   #underLogo {
     color: green;
     transition: color 1s;
