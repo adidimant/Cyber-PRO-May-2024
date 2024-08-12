@@ -115,10 +115,33 @@ video {
     border-radius: 50px;
   }
 
+  .input-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+
+    .input-button {
+      position: absolute;
+      right: 10px;
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      svg {
+        fill: rgba(255, 255, 255, 0.465);
+      }
+    }
+  }
+
   input {
     border-radius: 15px;
     border-color: transparent;
     background-color: rgba(255, 255, 255, 0.465);
+    caret-color: white;
+    padding-left: 10px;
+    box-sizing: border-box;
+    width: 200px;
+    backdrop-filter: blur(10px);
 
     &:focus {
       outline: none;
