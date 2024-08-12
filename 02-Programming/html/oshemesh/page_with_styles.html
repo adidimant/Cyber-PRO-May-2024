@@ -4,48 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Web Site</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #f4f4f4;
-        }
-        header, footer {
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        p {
-            margin: 20px 0;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-        }
-        nav ul li a:hover {
-            color: #007BFF;
-        }
-        .gallery img {
-            width: 30%;
-            margin: 1%;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
 
@@ -84,6 +43,28 @@
         <img src="https://media.istockphoto.com/id/600688368/photo/melbourne-central-business-district.jpg?s=2048x2048&w=is&k=20&c=ypVhLK6OEh9MF-o3ixzuy6IISMGUjglgCFRcsgqSnOE=" alt="Travel photo 3">
     </div>
 </section>
+
+<h1>Block and Inline Elements Example</h1>
+
+<!-- Block-level elements -->
+<div>I'm a block-level element (div)</div>
+<p>I'm a block-level element (p)</p>
+<h2>I'm a block-level element (h2)</h2>
+
+<!-- Inline-level elements -->
+<span>I'm an inline-level element (span)</span>
+<a href="#">I'm an inline-level element (a)</a>
+<strong>I'm an inline-level element (strong)</strong>
+
+<hr>
+
+<!-- Changing block-level element to inline -->
+<div class="inline-style">I'm a block-level element, but styled as inline</div>
+<p class="inline-style">I'm a block-level element, but styled as inline</p>
+
+<!-- Changing inline-level element to block -->
+<span class="block-style">I'm an inline-level element, but styled as block</span>
+<a href="#" class="block-style">I'm an inline-level element, but styled as block</a>
 
 <section id="contact">
     <h2>Contact Me</h2>
