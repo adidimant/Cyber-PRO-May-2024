@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>L1avZh</title>  
-</head>
-<body>
-  <div class="container">
-    <video src="./assets/Sonama Horizon.mov" autoplay loop muted></video>
-    <div class="time">
-      <h3 class="date" id="date">Saturday, Agust 10</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>L1avZh</title>
+  </head>
+  <body>
+    <div class="container">
+      <video src="./assets/Sonama Horizon.mov" autoplay loop muted></video>
+      <div class="time">
+        <h3 class="date" id="date">Saturday, August 10</h3>
         <h1 class="hour" id="hour">13:37</h1>
-    </div>
+      </div>
 
-    <div class="login">
-      <img class="profile-pic" src="./assets/profile-pic.jpeg" alt="">
-      <span>Liav Zecharya</span>
-      <input type="password" placeholder="Enter Password">
-      <pre>Your password is required to 
-enable Touch ID</pre>
+      <div class="login">
+        <img
+          class="profile-pic"
+          src="./assets/profile-pic.jpeg"
+          alt="Profile Picture"
+        />
+        <span>Liav Zecharya</span>
+        <input type="password" placeholder="Enter Password" />
+        <pre>
+Your password is required to 
+enable Touch ID</pre
+        >
+      </div>
     </div>
-  </div>
-  <script>
-    function updateTime() { // new function that update the time and date
-      const now = new Date(); 
-      document.getElementById('date').textContent = now.toLocaleDateString('en-US',
-       { weekday: 'long', //get the name of the weeekday
-         month: 'long', // get the name of the month
-         day: 'numeric' }); // get the day number
-      document.getElementById('hour').textContent = now.toTimeString().slice(0,5); // get the hour but and print only the first 5 letter (00:00)
-    }
-    updateTime();
-  </script>
-</body>
+    <script>
+      function updateTime() {
+        // new function that update the time and date
+        const now = new Date();
+        document.getElementById("date").textContent = now.toLocaleDateString(
+          "en-US",
+          {
+            weekday: "long", //get the name of the weeekday
+            month: "long", // get the name of the month
+            day: "numeric", // get the day number
+          }
+        );
+        document.getElementById("hour").textContent = now
+          .toTimeString()
+          .slice(0, 5); // get the hour but and print only the first 5 letter(00:00)
+      }
+      updateTime();
+    </script>
+  </body>
 </html>
