@@ -124,6 +124,7 @@ video {
       position: absolute;
       right: 10px;
       background: none;
+      top: 2px;
       border: none;
       cursor: pointer;
 
@@ -139,6 +140,7 @@ video {
     background-color: rgba(255, 255, 255, 0.465);
     caret-color: white;
     padding-left: 10px;
+    padding-right: 50px;
     box-sizing: border-box;
     width: 200px;
     backdrop-filter: blur(10px);
