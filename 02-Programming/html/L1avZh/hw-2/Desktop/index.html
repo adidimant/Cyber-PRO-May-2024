@@ -3,11 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Desktop</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="container">
+      <div class="topnav">
+        <ul class="leftnav">
+          <li></li>
+          <li style="font-weight: bold">Finder</li>
+          <li>File</li>
+          <li>Edit</li>
+          <li>View</li>
+          <li>Go</li>
+          <li>Window</li>
+          <li>Help</li>
+        </ul>
+
+        <ul class="rightnav">
+          <li>
+            <img
+              src="https://raw.githubusercontent.com/USBA/Cupertino-Sonoma-iCons/0c6afe6d2d25327e759b5be7f2e5e3ade265da54/panel/24-light/battery-full.svg"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src="https://cdn-icons-png.freepik.com/512/93/93158.png"
+              alt=""
+              width="15px"
+              height="15px"
+            />
+          </li>
+          <li>
+            <img
+              src="https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png"
+              alt=""
+              width="15px"
+              height="15px"
+            />
+          </li>
+          <li>
+            <img
+              src="https://eshop.macsales.com/blog/wp-content/uploads/2021/03/control-center-icon.png"
+              alt=""
+              width="15px"
+              height="15px"
+            />
+          </li>
+          <li id="date">Tue 13 Aug</li>
+          <li id="time">22:13</li>
+        </ul>
+      </div>
       <div class="dock">
         <img
           src="https://upload.wikimedia.org/wikipedia/en/9/98/FinderBigSur.png"
@@ -71,5 +118,23 @@
         />
       </div>
     </div>
+    <script>
+      function updateTime() {
+        // new function that update the time and date
+        const now = new Date();
+        document.getElementById("date").textContent = now.toLocaleDateString(
+          "en-US",
+          {
+            weekday: "short", //get the name of the weeekday
+            month: "short", // get the name of the month
+            day: "numeric", // get the day number
+          }
+        );
+        document.getElementById("hour").textContent = now
+          .toTimeString()
+          .slice(0, 5); // get the hour but and print only the first 5 letter(00:00)
+      }
+      updateTime();
+    </script>
   </body>
 </html>
