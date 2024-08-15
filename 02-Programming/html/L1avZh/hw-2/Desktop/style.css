@@ -85,3 +85,56 @@ body {
     transform: translateY(-20px);
   }
 }
+
+.desktop-container {
+  position: absolute;
+  text-align: center;
+  height: 100%;
+  text-align: center;
+  margin-left: 30px;
+  color: white;
+
+  .folder {
+    margin-top: 100px;
+
+    &:hover {
+      border: 2px solid gray;
+      border-radius: 5px;
+      background-color: rgba(43, 43, 43, 0.355);
+      cursor: pointer;
+    }
+  }
+
+  .world-of-warcraft {
+    &:hover {
+      border: 2px solid gray;
+      border-radius: 5px;
+      background-color: rgba(43, 43, 43, 0.355);
+      cursor: pointer;
+    }
+  }
+
+  .among-us {
+    &:hover {
+      border: 2px solid gray;
+      border-radius: 5px;
+      background-color: rgba(43, 43, 43, 0.355);
+      cursor: pointer;
+    }
+  }
+
+  .gta-6 {
+    &:hover {
+      &:hover {
+        border: 2px solid gray;
+        border-radius: 5px;
+        background-color: rgba(43, 43, 43, 0.355);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .app-title {
+    padding-bottom: 15px;
+  }
+}
