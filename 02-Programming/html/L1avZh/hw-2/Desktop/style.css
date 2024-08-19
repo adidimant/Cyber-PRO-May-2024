@@ -56,9 +56,6 @@ body {
   }
 }
 
-.space {
-  flex-grow: 1;
-}
 .container {
   display: flex;
 }
@@ -137,4 +134,16 @@ body {
   .app-title {
     padding-bottom: 15px;
   }
+}
+
+.divider {
+  border-right: 1px solid rgb(105, 102, 102);
+  height: 45px;
+  margin: 13px;
+  position: absolute;
+  display: inline;
+}
+
+.trash-can {
+  margin-left: 25px;
 }
