@@ -15,7 +15,11 @@ body {
 h1 {
   font-size: 3rem;
   font-family: "Matemasie", sans-serif;
-  color: cadetblue;
+  color: rgb(51, 87, 94);
+}
+
+.p {
+  color: rgb(46, 125, 157);
 }
 
 .container {
