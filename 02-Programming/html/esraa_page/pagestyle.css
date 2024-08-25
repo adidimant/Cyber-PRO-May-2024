@@ -1,0 +1,15 @@
+.img-row{
+   display: inline;
+   justify-content: flex-start;
+   gap: 10px;
+
+}
+.img-row img {
+   width: 200px;
+}
+.list-1
+{
+    color: darkorchid; 
+   
+
+}
