@@ -10,5 +10,20 @@
  .list-1
  {
      color: darkorchid; 
-     display:flow-root;
+    
+ 
  }
+ th {
+    background-color: #f2f2f2; 
+    color: rgb(86, 9, 9); 
+    font-weight: bold; 
+    padding: 12px; 
+    text-align: left;
+   }
+ 
+ 
+    table, th, td 
+    {
+       border: 1px solid #000000;
+    }
+ 
