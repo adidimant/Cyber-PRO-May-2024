@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Inputs</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>In<span class="p">p</span>uts:</h1>
+      <br />
+      <form id="main" name="main">
+        <table>
+          <tr>
+            <th>Input</th>
+            <th>Type</th>
+          </tr>
+          <tr>
+            <td><input type="text" placeholder="Enter your Name" /></td>
+            <td class="type">Text</td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="password"
+                required
+                placeholder="Enter Your Password"
+              />
+            </td>
+            <td class="type">Password</td>
+          </tr>
+          <tr>
+            <td><input type="text" placeholder="Disabled" disabled /></td>
+            <td class="type">Disabled</td>
+          </tr>
+          <tr>
+            <td><input type="text" placeholder="Read Only" readonly /></td>
+            <td>Read Only</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="numbers" value="radio1" id="radio1" />
+              <label for="radio1">1</label>
+              <input type="radio" name="numbers" value="radio2" id="radio2" />
+              <label for="radio2">2</label>
+              <input type="radio" name="numbers" value="radio3" id="radio3" />
+              <label for="radio3">3</label>
+            </td>
+            <td class="type">Radio</td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="checkbox"
+                name="car1"
+                value="Lamborghini"
+                id="car1"
+              />
+              <label for="car1">Lamborghini</label>
+              <input type="checkbox" name="car2" value="Ferrari" id="car2" />
+              <label for="car2">Ferrari</label>
+              <input type="checkbox" name="car3" value="Porsche" id="car3" />
+              <label for="car3">Porsche</label>
+            </td>
+            <td class="type">CheckBox</td>
+          </tr>
+          <tr>
+            <td>
+              <input list="browser" name="browser" />
+              <datalist id="browser">
+                <option value="Thorium"></option>
+                <option value="FireFox"></option>
+                <option value="FloorP"></option>
+                <option value="Thor"></option>
+                <option value="Chrome"></option>
+              </datalist>
+            </td>
+            <td class="type">List</td>
+          </tr>
+        </table>
+        <br />
+        <input class="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+    <div class="iframe-container">
+      <h1 id="iframe-title">MacOs-Window</h1>
+      <iframe src="../hw-2/index.html" name="iframe" frameborder="0"></iframe>
+      <br />
+      <br />
+      <a
+        href="../hw-1/index.html"
+        style="text-decoration: none"
+        target="iframe"
+        class="submit"
+        id="iframe-button"
+        >Change site</a
+      >
+    </div>
+
+    <script>
+      let iframeTitle = document.getElementById("iframe-title");
+      let iframeButton = document.getElementById("iframe-button");
+
+      iframeButton.addEventListener("click", () => {
+        if (iframeTitle.textContent === "Blog Site") {
+          iframeTitle.textContent = "MacOs-Window";
+          iframeButton.href = "../hw-2/index.html";
+        } else {
+          iframeTitle.textContent = "Blog Site";
+          iframeButton.href = "../hw-1/index.html";
+        }
+      });
+    </script>
+  </body>
+</html>
