@@ -1,0 +1,44 @@
+@media (max-width: 900px) and (max-height: 500px) {
+  body {
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .app-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .leftnav {
+    margin-left: 0px;
+    padding: 0px;
+
+    li {
+      font-size: 10px;
+    }
+  }
+
+  .rightnav {
+    margin-left: 0px;
+    font-size: 10px;
+
+    li {
+      img {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+
+  .app {
+    width: 50px;
+    height: 50px;
+    display: inline;
+    flex-wrap: wrap;
+  }
+  .dock {
+    display: inline;
+    width: 740px;
+  }
+}
