@@ -11,9 +11,7 @@
     font-size: x-large;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-body{
-    background-color: rgb(43, 8, 8);
-}
+
 .color-yellow{
     color: rgb(208, 255, 0);
     
@@ -35,7 +33,7 @@ body{
     
 }
 dialog{
-    background-color: chocolate;
+    background-color: rgb(30, 78, 210);
     height: 200px;
     width: 200px;
     button{
