@@ -86,7 +86,7 @@ body {
 .desktop-container {
   position: absolute;
   text-align: center;
-  height: 100%;
+  height: fit-content;
   text-align: center;
   margin-left: 30px;
   color: white;
