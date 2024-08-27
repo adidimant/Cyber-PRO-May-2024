@@ -13,7 +13,7 @@ elements:
 - <p> - paragraph, <pre> - paragraph that considers to line breaks (going down a line - will be presented as a new line in the pre element)
 - <table> , <tr>, <td>
 - forms: https://www.w3schools.com/html/html_forms.asp
-  including: <form>, <input>, type: text / email / password / radio / checkbox, <select>, <button> (or <input type="button">), <textarea>
+  including: <form>, <input>, type: text / email / password / radio / checkbox, <select>, <button> (or <input type="button">), <textarea>, 
   - onsubmit="callSomeFuc()" on form
   - onclick="callSomeFuc()" on submit button / button element of the form
   - when clicking on the <input type="submit" > - the form gets submit event, then automatically sends a GET request with the details configured inside the form (for each input in the form:   name -> value). if we define form method="POST" then a post request will be sent with these keys in the body of the http request.

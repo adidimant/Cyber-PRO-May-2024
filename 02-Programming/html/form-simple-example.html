@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script>
+ 	function myFunc() {
+     let inputFirstName = document.getElementById("fname");
+     let firstName = inputFirstName.value;
+     
+     // send data to server
+    }
+ </script>
+</head>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/action_page.php" method="POST">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" onclick="myFunc()" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html>
+
+
+
+HTTP /GET
+/action_page.php?fname=John&lname=Doe
+
+HTTP POST
+/action_page.php
+{
+	fname: 'John',
+    lname: 'Doe'
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/action_page.php" method="POST">
+  <label for="identifier">ID:</label><br>
+  <input type="text" id="identifier" name="identifier" disabled value="309574839"><br>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" placeholder="Your first name here" value=""><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" placeholder="Your last name here" value=""><br>
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username" placeholder="Your username here" value=""><br>
+  <label for="lname">Password:</label><br>
+  <input type="password" id="password" name="password" placeholder="Your password here" value=""><br>
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+  <br />
+  
+  <p>Choose your favorite Web language:</p>
+  
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label> <br />
+  
+  <p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" required value="Boat">
+  <label for="vehicle3"> I have a boat</label><br><br>
+  
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <br />
+  
+  <label for="phone">Phone number:</label>
+  <select id="phone_pre" name="phone_pre">
+    <option value="00">+00</option>
+    <option value="01">+01</option>
+    <option value="02">+02</option>
+    <option value="57">+57</option>
+    <option value="801">+801</option>
+    <option selected value="972">+972</option>
+  </select>
+  <input style="width: 175px;" type="tel" pattern="[0-9]{9}" id="phone_num" name="phone_num" placeholder="Your phone number here" value="">
+  <br /><br />
+  <label for="myfile">Upload a profile picture:</label>
+  <input type="file" id="myfile" name="myfile"><br><br>
+  <textarea rows="10" cols="40" placeholder="Describe your personality" maxlength="200" name="personality"></textarea>
+  <br /><br />
+  
+  <label for="prefered-food">Prefered food</label>
+  <input list="prefered-food" name="prefered-food">
+  <datalist id="prefered-food">
+    <option value="Regular">
+    <option value="Kosher">
+    <option value="Vegeterian">
+    <option value="Vegan">
+    <option value="Other">
+  </datalist>
+  
+  <br />
+  
+  <label for="prefered-food">Satisfaction level: </label>
+  0
+  <input type="range" id="a" name="a" value="50">
+  100
+  
+  <br /><br />
+  
+  <button type="button" onclick="alert('Ready to submit!!')">Test to see if the page is working!</button>
+  
+  <br /><br />
+  
+  <input type="submit" onclick="alert('checking form...')" value="Update profile (Submit)">
+  <input type="reset" value="Reset Form">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html>
+
