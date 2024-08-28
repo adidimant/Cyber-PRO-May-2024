@@ -99,16 +99,19 @@
     </div>
 
     <script>
-      let iframeTitle = document.getElementById("iframe-title");
-      let iframeButton = document.getElementById("iframe-button");
+      const iframeTitle = document.getElementById("iframe-title");
+      const iframeButton = document.getElementById("iframe-button");
 
+      console.log("WORK!"); // check script is working
       iframeButton.addEventListener("click", () => {
-        if (iframeTitle.textContent === "Blog Site") {
+        if (iframeTitle.textContent == "Blog Site") {
           iframeTitle.textContent = "MacOs-Window";
           iframeButton.href = "../hw-2/index.html";
+          console.log("%c CHANGE!", "color:green;"); // check change to site2
         } else {
           iframeTitle.textContent = "Blog Site";
           iframeButton.href = "../hw-1/index.html";
+          console.log("%c CHANGE!", "color:red;"); // check change back to site1
         }
       });
     </script>

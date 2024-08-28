@@ -42,3 +42,18 @@
     width: 740px;
   }
 }
+.time {
+  .date {
+    font-size: 30px;
+  }
+
+  .hour {
+    font-size: 50px;
+  }
+}
+.login {
+  .profile-pic {
+    width: 35px;
+    height: 35px;
+  }
+}

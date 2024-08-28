@@ -1,0 +1,15 @@
+@media (max-width: 900px) and (max-height: 500px) {
+  #botD {
+    ul {
+      #miluimP {
+        width: 150px;
+        height: 150px;
+      }
+
+      #miluimP:hover {
+        width: 250px;
+        height: 250px;
+      }
+    }
+  }
+}
