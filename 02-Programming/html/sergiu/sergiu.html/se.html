@@ -1,16 +1,83 @@
 <!DOCTYPE html>
-<html> 
+<html lang="en">
 <head>
-    <title>Welcome. </title>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergiu's Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0066cc;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .city {
+            margin-bottom: 20px;
+        }
+        .city img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #ad360b;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
-<body> 
-    <h1>Hello there</h1>
-     <br >
-     <br > 
+<body>
+    <header>
+        <h1>Sergiu's Travel Blog</h1>
+        <p>Exploring the cities I've visited in Russia</p>
+    </header>
 
-    <h2>This is my website.</h2>
-   <p>This is a paragraph </p>
-   
+    <section>
+        <div class="city">
+            <h2>First city was : Moscow</h2>
+            <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/01/17/14/russia-cold.jpg" alt="Red Square in Moscow">
+            <p>Moscow is the capital city of Russia, is rich in history and culture. I lived in this city for 3.5 years.
+                its a great city witch i liked very much.
+            </p>
+        </div>
 
+        <div class="city">
+            <h2>Saint Petersburg</h2>
+            <img src="https://www.travelblissnow.com/wp-content/uploads/2019/05/St.-Petersburg-cover2-1020x742.jpg?x39418" alt="Saint Petersburg cityscape">
+            <p>Saint Petersburg is known for its stunning architecture and cultural landmarks like the Winter Palace and the Hermitage Museum.</p>
+        </div>
+        <div class="city">
+            <h2>Kazan</h2>
+            <img src="https://ksuae.kgasu.ru/images/Texts_Foto/kazan.jpg" alt="Kazan Kremlin">
+            <p>Kazan is a beautiful city that blends Tatar and Russian cultures. The Kazan Kremlin is a must-see, with its unique mix of architectural styles.</p>
+        </div>
+        <br />
+        <br />
+
+    </section>
+
+    <footer>
+        <p>© 2024 Sergiu's Travel Blog</p>
+    </footer>
 </body>
 </html>
