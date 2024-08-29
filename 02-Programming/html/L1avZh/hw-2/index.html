@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>L1avZh</title>
+  </head>
+  <body>
+    <div class="container">
+      <video src="./assets/Sonama Horizon.mov" autoplay loop muted></video>
+      <div class="time">
+        <h3 class="date" id="date">Saturday, August 10</h3>
+        <h1 class="hour" id="hour">13:37</h1>
+      </div>
+
+      <div class="login">
+        <img
+          class="profile-pic"
+          src="./assets/profile-pic.jpeg"
+          alt="Profile Picture"
+        />
+        <span>Liav Zecharya</span>
+        <div class="input-container">
+          <input type="password" placeholder="Enter Password" />
+          <form action="./Desktop/index.html">
+          <button class="input-button">
+            <svg
+              width="24px"
+              height="24px"
+              viewBox="0 -0.5 17 17"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              class="si-glyph si-glyph-button-arrow-right"
+              fill="rgba(255, 255, 255, 0.465)"
+              stroke="rgba(255, 255, 255, 0.465)"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <title>1189</title>
+                <defs></defs>
+                <g
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    transform="translate(1.000000, 0.000000)"
+                    fill="rgba(255, 255, 255, 0.465)"
+                  >
+                    <path
+                      d="M15.969,8.041 C15.969,12.43 12.387,16 7.983,16 C3.583,16 0.001,12.43 0.001,8.041 C0.001,3.652 3.583,0.082 7.983,0.082 C12.387,0.082 15.969,3.652 15.969,8.041 L15.969,8.041 Z M1.969,8.041 C1.969,11.346 4.681,14.037 8.014,14.037 C11.347,14.037 14.061,11.346 14.061,8.041 C14.061,4.736 11.348,2.045 8.014,2.045 C4.68,2.045 1.969,4.736 1.969,8.041 L1.969,8.041 Z"
+                      class="si-glyph-fill"
+                    ></path>
+                    <path
+                      d="M8.057,10.969 L11.961,7.967 L8.056,5.016 L8.056,7.019 L4.793,7.019 C4.447,7.019 4.002,7.343 4.002,7.974 C4.002,8.604 4.485,8.949 4.828,8.949 L8.057,8.949 L8.057,10.969 L8.057,10.969 Z"
+                      class="si-glyph-fill"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </div>
+      </form>
+        <pre>
+Your password is required to 
+enable Touch ID</pre
+        >
+      </div>
+    </div>
+    <script>
+      function updateTime() {
+        // new function that update the time and date
+        const now = new Date();
+        document.getElementById("date").textContent = now.toLocaleDateString(
+          "en-US",
+          {
+            weekday: "long", //get the name of the weeekday
+            month: "long", // get the name of the month
+            day: "numeric", // get the day number
+          }
+        );
+        document.getElementById("hour").textContent = now
+          .toTimeString()
+          .slice(0, 5); // get the hour but and print only the first 5 letter(00:00)
+      }
+      updateTime();
+    </script>
+  </body>
+</html>

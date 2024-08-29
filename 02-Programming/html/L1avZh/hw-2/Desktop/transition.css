@@ -1,0 +1,13 @@
+body {
+  animation: transitions 1s;
+}
+
+@keyframes transitions {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
