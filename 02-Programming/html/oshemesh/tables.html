@@ -23,7 +23,7 @@
             </tr>
             <tr>
                 <td>Full Name:</td>
-                <td><input type="text" name="full_name" required></td>
+                <td><input type="text" name="full_name" placeholder="Your full name here"></td>
             </tr>
             <tr>
                 <td>Email:</td>
@@ -76,7 +76,8 @@
         </table>
         <br>
         <span id="message" class="error"></span>
-        <input class="submit" type="submit" value="Submit"/>
+        <button type="button" onclick="alert('Validate form')">Validate</button>
+        <button type="submit" class="submit">Submit</button>        
     </form>
     <script>
         document.getElementById('signupForm').addEventListener('submit', function(event) {
