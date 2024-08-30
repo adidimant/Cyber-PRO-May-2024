@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First JavaScript</h2>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+<script>
+	const nowDate = new Date();
+    console.log("now date is:", nowDate);
+    let a = 9;
+    console.log(a);
+    a = 10;
+    console.log(a);
+    
+    let b = a+a;
+    console.log(b);
+    a = 11;
+    b = a+a;
+    
+    function printDate() {
+    	console.log("the currentTime inside the function is: ", new Date());
+        
+        let b = 8;
+        
+        console.log("b:", b);
+        
+    }
+    
+    printDate();
+    
+    console.log(b);
+    
+</script>
+
+</body>
+</html> 

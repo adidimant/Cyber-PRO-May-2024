@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<script>
+	function changeSectionDisplay() {
+    	console.log("entered the function!");
+		const creditCardSection = document.getElementById("section-credit-card");
+        console.log(creditCardSection.style.display);
+        if (creditCardSection.style.display == 'none') {
+			creditCardSection.style.display = 'block';
+		} else {
+        	creditCardSection.style.display = 'none';
+        }
+        console.log("finished the function!");
+	}
+</script>
+
+<button onclick='changeSectionDisplay()'>Display credit-card section!</button>
+
+<br />
+<div id="section-credit-card" style="display: none;">
+  <br />
+  <form>
+      <input type="text" placeholder="please enter your credit card number :) " /> <br />
+      <input type="text" placeholder="please enter your credit card expiration :) " /> <br />
+      <input type="text" placeholder="please enter the back 3 digits :) " /> <br />
+      <br />
+      <input type="submit" value="Submit" />
+  </form>
+</div>
+
+</body>
+</html>
