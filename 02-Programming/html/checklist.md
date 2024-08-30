@@ -11,7 +11,7 @@ elements:
 - <button>
 - <b> - bold, <i> - italic text, <u> - underline
 - <p> - paragraph, <pre> - paragraph that considers to line breaks (going down a line - will be presented as a new line in the pre element)
-- <table> , <tr>, <td>
+- <table> , <tr>, <td> / <th> (recommended for the first row)
 - forms: https://www.w3schools.com/html/html_forms.asp
   including: <form>, <input>, type: text / email / password / radio / checkbox, <select>, <button> (or <input type="button">), <textarea>, 
   - onsubmit="callSomeFuc()" on form
