@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="mainTitle">JavaScript</h1>
+      <p id="mainParagraph" class="mainParagraph">
+        this is changeing color paragraph by clicking the button "change color"
+        the color will change to red
+      </p>
+      <br />
+      <button id="changeParagraphColor">Change color</button>
+    </header>
+
+    <main>
+      <form action="">
+        <h1>Job Application Form</h1>
+        <label for="Name">Name:</label> <br />
+        <input id="fName" type="text" placeholder="First Name" />
+        <input id="lName" type="text" placeholder="Last Name" />
+        <br />
+        <label for="Email">Email:</label> <br />
+        <input id="email" placeholder="JohnHammond@gmail.com" type="email" />
+        <br />
+        <label for="Position">What Position are you applying for?</label>
+        <br />
+        <select id="postion" name="Position" id="">
+          <option value=""></option>
+          <option value="Security Analyst">Security Analyst</option>
+          <option value="Security Engineer">Security Engineer</option>
+          <option value="Penetration Tester">Penetration Tester</option>
+          <option value="Security Consultant">Security Consultant</option>
+          <option value="Security Architect">Security Architect</option>
+        </select>
+        <br />
+        <label for="Portfolio">Portfolio (Optional):</label><br />
+        <input type="text" placeholder="https://wwww.exsample.com/" /> <br />
+        <label for="Resume">Resume:</label><br />
+        <input type="file" />
+
+        <input type="reset" value="Reset" />
+        <input type="submit" value="Submit" />
+        <input type="button" value="AutoFill" id="autoFill" />
+      </form>
+    </main>
+
+    <div id="change-color-bg" class="change-color-bg">
+      <h1>Change Background color!</h1>
+      <pre>
+Use Arrow Keys to Choose
+<- ->
+use Enter ↵ to stop
+      </pre>
+      <button id="backgroundColorChangeButton">Change color</button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
