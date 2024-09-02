@@ -57,20 +57,26 @@ changeColorButton.addEventListener("click", () => {
 });
 
 document.addEventListener("keydown", (keyPressed) => {
-  if (changeColor) {
-    if (keyPressed.key === "ArrowRight") {
-      currectColor = (currectColor + 1) % colors.length;
-      colorChange();
-    } else if (keyPressed.key === "ArrowLeft") {
-      currectColor = (currectColor - 1 + colors.length) % colors.length;
-      colorChange();
-    } else if (keyPressed.key === "Enter") {
-      colorChange();
-      changeColor = false;
-    }
+  if (keyPressed.key === "ArrowRight") {
+    colorChange("ArrowRight");
+  } else if (keyPressed.key === "ArrowLeft") {
+    colorChange("ArrowLeft");
+  } else if (keyPressed.key === "Enter") {
+    colorChange("Stop");
   }
 });
 
-function colorChange() {
-  background.style.backgroundColor = colors[currectColor];
+function colorChange(leftOrRight) {
+  if (changeColor) {
+    if (leftOrRight === "ArrowRight") {
+      currectColor = (currectColor + 1) % colors.length;
+      background.style.backgroundColor = colors[currectColor];
+    } else if (leftOrRight === "ArrowLeft") {
+      currectColor = (currectColor - 1 + colors.length) % colors.length;
+      background.style.backgroundColor = colors[currectColor];
+    } else if (leftOrRight === "Stop") {
+      background.style.backgroundColor = colors[currectColor];
+      changeColor = false;
+    }
+  }
 }
