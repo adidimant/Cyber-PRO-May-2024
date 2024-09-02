@@ -1,0 +1,25 @@
+body{
+    justify-content: center;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+
+}
+
+.container{
+    align-items: center;
+    justify-content: center;
+    text-align: center;   
+}
+
+form{
+ border: 1px solid black;
+ padding: 20px;
+ border-radius: 10px;
+ background-color: whitesmoke;
+
+ input{
+    font-size: 20px;
+ }
+}
+
