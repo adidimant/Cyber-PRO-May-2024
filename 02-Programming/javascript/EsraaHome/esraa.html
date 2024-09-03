@@ -27,18 +27,16 @@
         <label for="email">Email ID:</label>
         <input id="email" type="email" name="email" required > 
         <br> <br>
-        <button type="button"  onclick="Form()" >Auto Fill Form </button>
+        <button type="button"  onclick="autofillForm()" >Auto Fill Form </button>
 
       
     </form>
     <script>
-        function Form() 
+        function autofillForm() 
         {
             document.getElementById("Fname").value =" Esraa";
             document.getElementById("Lname").value =" Mo";
             document.getElementById("email").value =" exampelgmail.com";
-
-
         }
 
 
