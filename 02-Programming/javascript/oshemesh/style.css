@@ -1,0 +1,31 @@
+.paragraph {
+    font-size: 20px;
+   }
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+  }
+  
+  header {
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+   main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+  }
