@@ -4,17 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+  
    
 </head>
 <body>
+    
     <!--  חלק 1-->
+
     <p id="color"> Click on the button to change the color</p>
     <button type="button" 
-    onclick='document.getElementById ("color").style.color="navy" '> click me</button>
-
-    <!-- חלק 2-->
-
+    onclick='document.getElementById ("color").style.color="red" '> click me</button> 
+    <br>
+    <br>
+    <br>
     
+
+
+
+
+   
+
     <form>
         <label for="fName" > First name: </label>
         <input id="Fname"   type=" text" name=" fName"  required>
@@ -45,5 +57,42 @@
 
 
 
+    
+    <div class="container">
+        
+        <h2>Please add your information </h2>
+
+        <form>
+            <table>
+                <tr>
+                    <td><label for="Fname">First name:</label></td>
+                    <td><input id="Fname" type="text" name="fName" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Lname">Last name:</label></td>
+                    <td><input id="Lname" type="text" name="LName" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email ID:</label></td>
+                    <td><input id="email" type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="center">
+                        <button type="button" onclick="Form()">Auto Fill Form</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+   </div>
+   <br>
+   <br>
+   <br>
+    <div class="box" id="colorBox">
+        <h2> change the background</h2>
+        <input type="text" id="colorInput" placeholder="write here..">
+    </div>
+    <script src="code.js"></script> 
+    <br> 
+        
 </body>
 </html>
