@@ -15,3 +15,15 @@ function changeColor() {
         document.getElementById('email').value = 'oshemesh73@gmail.com';
         document.getElementById('age').value = '51'; // assuming "age" in years
     }
+
+    function changeBackgroundColor() {
+        const input = document.getElementById('colorInput');
+        
+        input.addEventListener('keydown', function(event) {
+            document.body.style.backgroundColor = event.target.value;
+        });
+
+        input.addEventListener('keyup', function() {
+            document.body.style.backgroundColor = '';
+        });
+    }
