@@ -29,26 +29,26 @@ personCopy.eyeColor = "brown";
 // include in the object the function that converts celsius to farenigeht temprature and other function that does the opposite
 
 const utils = {
-  alwaysTrue() {
+  alwaysTrue: function () {
     return true;
   },
-  trueOrFalse(value) {
+  trueOrFalse: function (value) {
     return typeof value == "boolean" ? !value : null;
   },
-  sum(num1, num2) {
+  sum: function (num1, num2) {
     return typeof num1 == "number" && typeof num2 == "number"
       ? num1 + num2
       : null;
   },
-  checkStrings(s1, s2) {
+  checkStrings: function (s1, s2) {
     return typeof s1 == "string" && typeof s2 == "string" ? s1 + s2 + s1 : null;
   },
-  getType(value) {
+  getType: function (value) {
     if (value == null) return "null";
     if (Array.isArray(value)) return "array";
     return typeof value;
   },
-  ageDifference(date1, date2) {
+  ageDifference: function (date1, date2) {
     if (!(date1 instanceof Date) || !(date2 instanceof Date)) return null;
 
     const yearDiff = date2.getFullYear() - date1.getFullYear();
@@ -62,10 +62,10 @@ const utils = {
 
     return ageDiff || "No difference";
   },
-  celsiusToFahrenheit(celsius) {
+  celsiusToFahrenheit: function (celsius) {
     return (celsius * 9) / 5 + 32;
   },
-  fahrenheitToCelsius(fahrenheit) {
+  fahrenheitToCelsius: function (fahrenheit) {
     return ((fahrenheit - 32) * 5) / 9;
   },
 };
@@ -105,6 +105,7 @@ console.log("-------------------");
 
 console.log(utils.celsiusToFahrenheit(45));
 console.log(utils.fahrenheitToCelsius(45));
+console.log(utils.alwaysTrue());
 
 console.log("-------------------");
 
