@@ -1,4 +1,6 @@
-// 1 function that returns always true
+
+ // 1 function that returns always true
+/* */
 function AlwaysT() {
   return true;
 }
@@ -74,11 +76,19 @@ console.log(CheckString('esraa', 'good'));  // "<esraa><good><esraa>"
 console.log(CheckString('dhfs', 123));      // null
 
 // 5
-console.log(getType([1, 1, 1]));  // 'array'
-console.log(getType(null));       // 'null'
-console.log(getType(11));         // 'number'
+console.log(getType([1, 1, 1]));  // array
+console.log(getType(null));       // null
+console.log(getType(11));         // number
 
 // 6
 const date1 = '2000-1-1';  
 const date2 = '2024-09-11';  
 console.log(AgeDifference(date1, date2));  // 24
+console.log("***************************************")
+
+
+
+
+
+
+
