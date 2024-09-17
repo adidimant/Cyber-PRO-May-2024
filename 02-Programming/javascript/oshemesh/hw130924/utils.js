@@ -15,7 +15,7 @@ const utils = {
   sumNumbers,
   alwaysTrue,
   oppositeBoolean,
-  toCelsius   
+  toCelsius,
   };
   
 

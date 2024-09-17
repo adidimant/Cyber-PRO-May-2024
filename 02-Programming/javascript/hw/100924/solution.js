@@ -68,11 +68,14 @@ function getAgeDifference(date1, date2) {
   } else {
     differenceInMs = t2 - t1;
   }
+
   // or we can instead: const `difference = Math.abs(t1-t2);`
 
   const ageDifference = differenceInMs / 1000 / 60 / 60 / 24 / 365;
   return ageDifference;
 }
+
+getAgeDifference(new Date('03/03/1996'), new Date('04/01/1992'));
 
 
 function myFunction(p1, p2) {

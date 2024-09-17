@@ -45,3 +45,14 @@ x.age = 60; // The value of age will be changed to 60 in both x and person
 const strObject = JSON.stringify(person);
 JSON.parse(strObject); // returns the object from the string
 
+
+const spider1 = {
+  legsCount: 8,
+  eyesColor: 'black',
+  weight: 0.001,
+  width: 0.02,
+  height: 0.25,
+};
+
+const spider1Keys = Object.keys(spider1);
+const spider1Values = Object.values(spider1);
