@@ -44,3 +44,5 @@ function toCelsius(fahrenheit) {
 
 let value2 = toCelsius;
 
+// Export toCelsius function
+module.exports = toCelsius;

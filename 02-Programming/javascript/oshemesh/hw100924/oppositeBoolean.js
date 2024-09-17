@@ -4,5 +4,8 @@ function oppositeBoolean(value) {
     }
     return null;
 }
-console.log("oppositeBoolean(true):", oppositeBoolean(true));
-console.log("oppositeBoolean(false):", oppositeBoolean(false));
+//console.log("oppositeBoolean(true):", oppositeBoolean(true));
+//console.log("oppositeBoolean(false):", oppositeBoolean(false));
+
+// Export the function oppositeBoolean
+module.exports = oppositeBoolean;
