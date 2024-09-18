@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planets</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="dialog-container">
+      <dialog id="dialog" open>
+        <p>Your SECRET has been thrown to the universe!</p>
+      </dialog>
+    </div>
+    <video
+      id="backgroundVideo"
+      autoplay
+      muted
+      loop
+      src="./assets/Earth.mp4"
+    ></video>
+    <div class="container">
+      <h1 class="main-title" id="main-title">
+        <span id="switchTitle" class="switchTtile">Earth</span>
+      </h1>
+      <div class="infoParagraph" id="infoParagraph">
+        <!-- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum,
+        dolorem! -->
+      </div>
+      <br />
+      <br />
+      <div class="button-container">
+        <button id="switchVideoButton">Switch Planet</button>
+        <button id="showInfoButton">Show Info</button>
+        <br />
+      </div>
+      <button id="mainSite" class="mainSite">Galaxy</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
