@@ -61,3 +61,4 @@ document.getElementById("password").addEventListener("change", function() {
 document.getElementById("username").addEventListener("mouseenter", function() {
     this.classList.add("highlight"); 
 });
+console.log("");
