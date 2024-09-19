@@ -104,6 +104,7 @@ if not - redirect to the new url */
 
 
 function checkAndRedirect(url) {
+  const currentHostname = window.location.host;
     const newUrl = new URL(url);
     if(newUrl.host!==currentHostname)
        {
@@ -125,7 +126,7 @@ function checkAndRedirect(url) {
 
 function chechN(ObjCheck,Array)
 {
-    if(Array.length>4)
+      if(Array.length>4)
         {
             return false;
         }
@@ -156,3 +157,4 @@ const ObjCheck ={
 
 let Array =["key1" ,"key2","key3","key4" ];
 console.log(chechN(ObjCheck,Array));
+
