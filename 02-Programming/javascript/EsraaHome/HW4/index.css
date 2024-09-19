@@ -108,7 +108,7 @@ button:hover{
     border: 1px solid 	#ff5252;
 }
 .success {
-    border: 2px solid green;
+    border: 2px solid rgb(10, 225, 10);
 }
 .highlight {
     background-color: rgb(170, 210, 222);}
