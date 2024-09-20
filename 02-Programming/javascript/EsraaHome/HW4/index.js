@@ -49,7 +49,7 @@ document.getElementById("password-login").addEventListener("blur", function() {
 
 
 // 7. Show an alert if the password length is valid when changed
-document.getElementById("password").addEventListener("change", function() {
+document.getElementById("password").addEventListener("input", function() {
     if(this.value.length >= 5) {
         alert("Password is valid!");
     } else {
