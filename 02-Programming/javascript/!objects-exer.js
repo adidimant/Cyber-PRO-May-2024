@@ -45,7 +45,6 @@ x.age = 60; // The value of age will be changed to 60 in both x and person
 const strObject = JSON.stringify(person);
 JSON.parse(strObject); // returns the object from the string
 
-
 const spider1 = {
   legsCount: 8,
   eyesColor: 'black',
