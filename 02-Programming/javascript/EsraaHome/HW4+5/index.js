@@ -106,13 +106,9 @@ console.log("My full name has"+ "  " + fullName.length+ "  " + "characters");//M
 
 
 //2
-// Article text 
+
 const article = "האיש עם \"המגאפון הגדול בעולם\" בשירות המועמד לנשיאות טראמפ. עם הון של 252 מיליארד דולר, בעלות על רשת X (טוויטר) וכמעט 200 מיליון עוקבים — אילון מאסק מסומן כאחת הסכנות הגדולות בעולם של דיסאינפורמציה ושקרים. באמצעות תיאוריות קונספירציה וציוצים בעד דונלד טראמפ, מאסק שואף להיות אחד מהאנשים המשפיעים ביותר בעולם. בברזיל ובאוסטרליה כבר שוקלים להגביל את כוחו, אבל אם טראמפ ייבחר, מאסק צפוי לקבל תפקיד בכיר בבית הלבן.";
-
-// Splitting the article into sentences using split
 const sentencesArray = article.split('.');
-
-// Final Output
 console.log(sentencesArray);
 
 
