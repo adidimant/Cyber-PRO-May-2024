@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.main-title {
+  text-align: center;
+  -webkit-text-stroke: 3px rgb(0, 217, 255);
+  color: transparent;
+  font-size: 4rem;
+  padding: 20px;
+  z-index: 1;
+}
+
+.switchTtile {
+  -webkit-text-stroke: 0;
+  background-image: linear-gradient(135deg, #0a74da, #b0e57c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.coolTextArea {
+  background-color: rgba(0, 0, 0, 0.762);
+  text-align: center;
+  padding: 30px;
+  width: 450px;
+  height: 105px;
+  outline: none;
+  font-size: 20px;
+  border-radius: 25px;
+  resize: none;
+  color: whitesmoke;
+}
+.button-container {
+  z-index: 1;
+  display: flex;
+}
+
+.throwSecretButton {
+  background-image: linear-gradient(
+    45deg,
+    #af0bcc 0%,
+    #95169e 51%,
+    #d498c7 100%
+  );
+  width: 28rem;
+}
+
+.mainSite {
+  width: 20rem;
+}
+
+button {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #312edf;
+  background-image: linear-gradient(
+    45deg,
+    #312edf 0%,
+    #449bec 51%,
+    #62b7ec 100%
+  );
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  z-index: 1;
+}
+.dialog-container {
+  position: absolute;
+  left: 42%;
+  top: 20%;
+  width: fit-content;
+}
+
+dialog {
+  position: absolute;
+  display: flex;
+  width: 20rem;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background-color: rgba(245, 245, 245, 0.487);
+  z-index: 1;
+  height: fit-content;
+  text-align: center;
+  visibility: hidden;
+}
+
+button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.infoParagraph {
+  color: rgb(255, 105, 105);
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}

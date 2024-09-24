@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Feedback Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Fe<span class="p">e</span>dback:</h1>
+        <form id="feedbackForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" name="feedback"></textarea><br><br>
+            <button type="button" id="submitBtn" class="submit">Submit</button>
+        </form>
+        <p id="message" class="hidden">Thank you for your feedback!</p>
+        <button id="toggleFormBtn" class="toggleFormBtn">Toggle Form Visibility</button>
+        <button id="highlightBtn" class="highlightBtn">Highlight Feedback</button>
+        <button id="addElementBtn" class="addElementBtn">Add Element</button>
+        <button id="removeElementBtn" class="removeElementBtn">Remove Element</button>        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

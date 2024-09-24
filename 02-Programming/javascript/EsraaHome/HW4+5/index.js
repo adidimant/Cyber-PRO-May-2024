@@ -169,7 +169,7 @@ window.location.href = 'https://www.google.com';
     // Cut the last 4 items from the array
     console.log("Last 4 items to be sent: ", firstFourLetter);
 
-    await fetch('http://my-website.com', {
+    await fetch('https://reqres.in/api/users', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json', // Content type
