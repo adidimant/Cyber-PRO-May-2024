@@ -27,16 +27,18 @@ document.addEventListener('DOMContentLoaded', () => {
     addElementBtn.addEventListener('click', () => {
         const newElement = document.createElement('p');
         newElement.textContent = 'New Element Added!';
-        document.body.appendChild(newElement);
+        newElement.classList.add('new-element'); // Add the new class for styling
+        document.querySelector('.container').appendChild(newElement); // Append to the container
     });
 
     // Event listener 5: Remove the last added element from the DOM
     removeElementBtn.addEventListener('click', () => {
-        const elements = document.querySelectorAll('body > p');
+        const elements = document.querySelectorAll('.container > p'); // Target <p> elements within the container
         if (elements.length > 0) {
-            elements[elements.length - 1].remove();
+            elements[elements.length - 1].remove(); // Remove the last <p> element
         }
     });
+
 
     // Event listener 6: Global event listener
     document.addEventListener('some-event', () => {
