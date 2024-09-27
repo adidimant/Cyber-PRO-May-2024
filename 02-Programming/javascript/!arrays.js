@@ -14,19 +14,23 @@ const firstItem = arr[0];
 
 const arr2 = [];
 
+const arr3= [4,5,true];
+console.log(arr3.length); // 3
+
 // check is the array is not empty:
 if (arr2.length) { // can be also: if (arr2.length > 0)
 
 }
 
 // check if the type is array AND the array is not empty:
-if (Array.isArray(arr2) && arr2.length) {
+if (Array.isArray(arr2) && arr2.length > 0) {
 
 }
 
 // array can be converted to string by .toString()
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.toString(); // 
+fruits.toString(); // "Banana, Orange, Apple, Mango"
+JSON.stringify(["Banana", "Orange", "Apple", "Mango"]); // '["Banana", "Orange", "Apple", "Mango"]'
 
 // chancing an array to a string (with ','), then change it back to the same array using split method: 
 ["Banana", "Orange", "Apple", "Mango"].toString().split(",")
@@ -50,7 +54,7 @@ arr.push(6); // adding a new item
 arr.pop(); // remove the last item in the array => 6 will be removed
 
 const fruits4 = ["Banana", "Orange", "Apple", "Mango"];
-let fruit = fruits4.shift(); // removing the first item of the array, and return it!
+let fruit = fruits4.shift(); // removing the first item of the array, and return it! (`fruit` has the value of "Banana")
 
 fruits.unshift("Lemon"); // adds an item to the beginning of the array
 

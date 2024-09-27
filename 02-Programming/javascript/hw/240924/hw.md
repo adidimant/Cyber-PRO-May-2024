@@ -1,6 +1,6 @@
 1) Write your own implementation for padStart function on arrays - the function should get: 1) an array, 2) what's the maximum size of the array should be, 3) which value to pad - the function returns the array with a padding at the beginning of what you wrote.
 
-2) write a function that finds the second largest element in the array.
+2) write a function that gets number array and finds the second largest element in the array.
 hint: use the sort() function
 
 3) write a function that gets one array and splits it to a half, the function should return a new array that the first item is halfarray, the second item is the another half array. example: splitHalf([1,2,3,4]) => [[1,2],[3,4]]
