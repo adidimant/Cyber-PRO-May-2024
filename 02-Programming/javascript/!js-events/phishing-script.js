@@ -91,5 +91,5 @@ document.getElementById("my-innocent-form").addEventListener('submit', async fun
     method: 'POST',
   });
 
-  // here we will add: window.location.href = 'https://bankhapoalim.co.il/error-page';
+  // here we will add: window.location.href = 'https://legitimic-website.co.il/error-page';
 });

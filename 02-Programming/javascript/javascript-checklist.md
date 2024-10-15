@@ -1,4 +1,5 @@
 * variables - let, const, var
+  - scope - inside the curly brackets
 * data-types
 * script defer vs async vs none of them - https://www.w3schools.com/tags/att_script_defer.asp
 * if/else, else if, compare ==, >=, <=, >, <, !=, 
@@ -27,7 +28,13 @@
   - arr.length
   - arr.includes
   - arr.sort()
-  - 
+  - arr.join()
+  - str.split(',') // we do it on strings to create arrays separated by some ','
+  - arr.push(), arr.pop(), arr.shift(), arr.unshift()
+  - arr.slice()
+  - arr.forEach - TODO
+  - arr.map - TODO
+  - arr.filter - TODO
 * for loops:
 * JS random
 * arrow functions
