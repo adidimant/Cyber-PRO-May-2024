@@ -7,8 +7,7 @@
 function padStart(arry,maxarry,padstarValue){
     let padding  = maxarry-arry.length;
     let paddingarry = new Array(padding).fill(padstarValue);
-    return paddingarry.concat(arry);
- 
+    return paddingarry.concat(arry);//משלבים את מערך 
 }
 console.log(padStart([1,2,3],4,'full')); 
 console.log("^_____^");
@@ -22,6 +21,7 @@ hint: use the sort() function*/
 
 function secLargElement(arry){
     let arrySave = arry.sort(  function (a,b) {return b-a })//sort( (a, b) => a - b );
+    //כאן משתמשים בפונקציה sort() כדי למיין את המערך בסדר יורד (מהגדול לקטן).
     console.log(arrySave);
    return  arrySave [1] ;
 }
@@ -41,6 +41,7 @@ console.log("^_____^");
 
   function cutArry(arr){
     let middle = Math.floor(arr.length/2);
+    //פונקציה זו משמשת לעגל את המספר למספר השלם הקרוב ביותר שמתחתיו.
 
     let halfone=arr.slice(0,middle);
     let hafetow=arr.slice(middle);
@@ -62,7 +63,7 @@ console.log("^_____^");
 function checkIfEqual(arry1,arry2){
     let jsonArr1 = JSON.stringify(arry1);
     let jsonArr2 = JSON.stringify(arry2);
-    
+    //כדי להמיר את המערכים arry1 ו-arry2 למחרוזות JSON. כך אפשר להשוות את המערכים בצורה ישירה כמחרוזות.
     if ( jsonArr1 === jsonArr2 ){
         return 'equal';
     }
@@ -82,8 +83,9 @@ console.log("^_____^");
 
  function notEqual(arry){
 
-   const uniqueSet=new Set(arry);
+   const uniqueSet=new Set(arry);//שמכיל רק ערכים ייחודיים מתוך המערך arry
    console.log(uniqueSet);
+   //Set אוטומטית מסיר כפילויות, כך שאם יש ערכים חוזרים במערך, הם יופיעו פעם אחת בלבד ב-Set.
 
    if(arry.length === uniqueSet.size){
     return true;
@@ -104,7 +106,7 @@ console.log("^_____^");
  function removeAt(arr, indexToRemove) {
 
     const newArr = arr.slice(0, indexToRemove).concat(arr.slice(indexToRemove + 1));
-    return newArr;
+    return newArr;//לשילוב החלקים
   }
   console.log(removeAt([1,2,3,4,5],3));
   console.log("^_____^");
@@ -127,3 +129,20 @@ console.log("^_____^");
 
    }
    console.log(sumArry([1,2,3,4,5],[6,7,8,9,10]));
+
+
+
+
+
+
+const numbers = [0,1,2,3,4,5,6];
+const zeroArr=numbers.map((number)=>{
+return number * 0;
+});
+console.log(zeroArr);
+
+
+
+
+
+ 
