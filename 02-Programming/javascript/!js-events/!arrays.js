@@ -146,6 +146,7 @@ for this question use forEach to build the html content
 */
 const items = ['Milk', 'Apple', 'Honey', 'Bread', 'Plate'];
 let htmlBody = '';
+
 items.forEach((item) => {
   htmlBody += '<div><label>';
   htmlBody += item;
@@ -154,8 +155,23 @@ items.forEach((item) => {
 
 document.body.innerHTML = htmlBody;
 
+// and if we want it as async function:
 
-// arr.map(): for every item in the array (and his index) - map it to the returned value in the delivered function. returns an array of the same size
+async function abc() {
+  const response = await fetch();
+  items.forEach((item) => {
+    htmlBody += '<div><label>';
+    htmlBody += item;
+    htmlBody += '</label></div> <br />';
+  });
+}
+
+await abc();
+
+document.body.innerHTML = htmlBody;
+
+
+// arr.map(): for every item in the array (and his index) - map it to the returned value in the delivered function. map returns an array of the same size
 const numbers = [0,1,2,3,4,5,6];
 
 // converts each number in the array to its sequential number
@@ -214,6 +230,30 @@ const objectsArr = stringsArr.map((str) => {
   const obj = { [str]: str };
   return obj;
 });
+
+
+// given an array of students with full details, provide to the teacher an array contains only full names (using map):
+const students = [
+  {
+    firstName: 'Oren',
+    lastName: 'Shemesh',
+    birthday: '10/10/2024',
+    id: 300002122,
+    address: 'Ilan 7, Rehovot',
+  },
+  {
+    firstName: 'Isra',
+    lastName: 'Mo',
+    birthday: '11/10/2024',
+    id: 300002123,
+    address: 'Ilan 7, Herzeliya',
+  }
+];
+
+const studentsFullnames = students.map((student) => {
+  return student.firstName + ' ' + student.lastName;
+});
+
 
 // arr.filter(): returns an array filtered from the original array by some condition (transfered as boolean function)
 const numbers3 = [1,2,-2,-1,5,-4,4,4,7,-10];
