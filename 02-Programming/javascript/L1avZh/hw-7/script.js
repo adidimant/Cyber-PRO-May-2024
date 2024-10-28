@@ -20,7 +20,7 @@ let even = 0;
 
 for (let i = 0; i < arr2.length; i++) {
   if (arr2[i] % 2 == 0) {
-    even += 1;
+    even++;
   }
 }
 
@@ -63,7 +63,7 @@ console.log(arr4Answer);
 let oddSum = 0;
 for (let i = 1; i <= 10; i++) {
   if (i % 2 !== 0) {
-    oddSum += i;
+    oddSum++;
   }
 }
 
@@ -90,9 +90,9 @@ const testStr = "javascript is awesome";
 function charCounter(str, char) {
   let counter = 0;
   for (let i = 0; i < str.length; i++) {
-    const temp = str.charAt(i);
-    if (temp == char) {
-      counter += 1;
+    const tempChar = str.charAt(i);
+    if (tempChar == char) {
+      counter++;
     }
   }
   return counter;
