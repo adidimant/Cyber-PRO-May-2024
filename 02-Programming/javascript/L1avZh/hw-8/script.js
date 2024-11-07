@@ -54,7 +54,7 @@ console.log(oddSum);
 
 function randomNumber() {
   return Math.random() * 101;
-  //   return Math.floor(Math.random() * 100);
+  //   return Math.floor(Math.random() * 101);
 }
 
 console.log(randomNumber());
@@ -64,7 +64,7 @@ console.log(randomNumber());
 
 function randomLotteryNumber() {
   return Math.random() * 6000001;
-  //   return Math.floor(Math.random() * 6000000);
+  //   return Math.floor(Math.random() * 6000001);
 }
 
 console.log(randomLotteryNumber());
