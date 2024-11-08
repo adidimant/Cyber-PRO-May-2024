@@ -91,4 +91,3 @@ def foo3():
 x = foo3() # x gets the value None (since foo3 doesn't return a value)
 
 print(x) # printing None
-
