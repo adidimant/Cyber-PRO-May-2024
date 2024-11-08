@@ -1,6 +1,6 @@
 //hw1 - Sum of Numbers in an Array
 
-let numbers1 = [2, 5, 8, 3];
+const numbers1 = [2, 5, 8, 3];
 let sum = 0;
 
 for (let i = 0; i < numbers1.length; i++) {
@@ -11,7 +11,7 @@ console.log(sum); // Expected Output: 18
 
 //hw2 - Counting Even Numbers
 
-let numbers2 = [1, 4, 6, 9, 10];
+const numbers2 = [1, 4, 6, 9, 10];
 let count = 0;
 
 for (let i = 0; i < numbers2.length; i++) {
@@ -24,7 +24,7 @@ console.log(count); // Expected Output: 3
 
 //hw3 - Finding the Maximum Value
 
-let numbers3 = [7, 2, 10, 4, 6];
+const numbers3 = [7, 2, 10, 4, 6];
 let largest = numbers3[0];
 
 for (let i = 1; i < numbers3.length; i++) {
@@ -93,3 +93,16 @@ for (let i = 0; i < array.length; i++) {
 }
 
 console.log(concatenatedString); // Expected Output: "Hello world!"
+
+function countDivisionsByTwo(number) {
+    
+    let count = 0;
+    while (number >= 1 ) {
+        number /= 2;
+        count++;
+    }
+    return count -1;
+}
+
+console.log(countDivisionsByTwo(16)); // Output: 4
+console.log(countDivisionsByTwo(9)); // Output: 3
