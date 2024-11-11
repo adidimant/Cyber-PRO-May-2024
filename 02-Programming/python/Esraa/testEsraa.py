@@ -36,24 +36,14 @@ def random_number():
     print(random_num)
     if 0 <= random_num <= 1000000:
         return bool(random_num)
-
-
     elif 1000001 <= random_num <= 2000000:
         return [random_num,random_num,random_num]
-
-
     elif 2000001 <= random_num <= 3000000:
         return {random_num}
-
-
     elif 30000001 <= random_num <= 4000000:
         return  (random_num,)
-
-
     elif 4000001 <= random_num <= 5000000:
         return float(random_num)
-
-
     elif 5000001 <= random_num <= 6000000:
         return None
 
@@ -61,3 +51,5 @@ def random_number():
 
 result=random_number()
 print(result)
+
+
