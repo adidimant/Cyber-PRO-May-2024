@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>    
+   <meta charset="UTF-8">
+   <meta name ="viewport" content="width=device-width,initial-scale=1.0">
+   <title>This is a Change Color Text</title>
+
+   <link rel="stylesheet" href="#style.css">
+   <style> 
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 50px; 
+            text-align: center;
+            background-color: aqua;
+        }   
+        form {
+            width: 300px;
+            margin-bottom: 25px;
+            align-content: center;
+        }
+
+         #myParagraph {
+            font-size : 18px;
+            color: crimson;     
+         }
+
+         label{
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+         }
+
+         input,textarea{
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            text-align: center;
+
+         }
+
+         button{
+            padding: 10px 20px;
+            background-color: rgb(162, 236, 169);
+            color: black;
+            border: blue;
+            cursor: pointer;
+            margin-top: 5px;
+         }
+
+         button:hover{
+            background-color: rgb(23, 136, 8);
+         }
+
+         h1{
+            text-align: center;
+         }
+         p{
+            text-align: center;
+         }
+         .form-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 5px;
+         }
+
+   </style>
+</head>
+ <body>
+
+     <p id="myParagraph">This text is an example of changing color paragraph,just click the button under the text!</p>
+
+    <button id="colorButton">Change Color</button>
+
+    <script>
+        const button = document.getElementById('colorButton')
+        const paragraph = document.getElementById('myParagraph')
+
+        button.addEventListener('click',function(){
+            if (paragraph.style.color==='red'){
+                paragraph.style.color='navy'
+
+        }else{
+            paragraph.style.color='red'
+        }
+    })
+    </script>
+
+    <h1>In this section please fill the asked information !</h1>
+<div class="form-container">
+    <form id="myForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Example:Yurii Petrovich">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Example@gmail.com">
+
+        <label for="message">What are you thinking about this site ?</label>
+        <textarea id="message" rows="5" placeholder="You ca write it here!"></textarea>
+    </form>
+</div>
+
+    <button id="autoFillButton">Show me an example of full form "></form></button>
+    <script>
+        document.getElementById('autoFillButton').addEventListener('click',function () {
+            document.getElementById('name').value = 'Yurii Vasilivech';
+            document.getElementById('email').value ='Something@gmail.com';
+            document.getElementById('message').value='Damn the site is great !';
+    
+        })
+    </script>
+
+        <input type="text" id="colorInput" placeholder="Every time you type the color changes ...">
+
+        <script>
+            const inputField=document.getElementById('colorInput');
+            inputField.addEventListener('keydown' ,(event) => {
+                document.body.style.backgroundColor ='#'+ Math.floor(Math.random() *16777215).toString(16);
+
+             })
+         <inputField.addEventListener('keyup' , () => {
+            document.body.style.backgroundColor= 'aqua';
+
+         } )
+
+        </script>
+</body>
+</html>
