@@ -1,0 +1,55 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 50px; 
+    text-align: center;
+}   
+form {
+    width: 300px;
+    margin-bottom: 25px;
+    align-content: center;
+}
+
+ #myParagraph {
+    font-size : 18px;
+    color: crimson;     
+ }
+
+ label{
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+ }
+
+ input,textarea{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    text-align: center;
+
+ }
+
+ button{
+    padding: 10px 20px;
+    background-color: rgb(162, 236, 169);
+    color: black;
+    border: blue;
+    cursor: pointer;
+    margin-top: 5px;
+ }
+
+ button:hover{
+    background-color: rgb(23, 136, 8);
+ }
+
+ h1{
+    text-align: center;
+ }
+ p{
+    text-align: center;
+ }
+ .form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+ }
