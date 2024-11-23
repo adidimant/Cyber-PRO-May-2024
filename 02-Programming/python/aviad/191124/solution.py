@@ -71,7 +71,6 @@ class Person:
         return age
 
 
-# Question 3:
 
 class User(Person):
     def __init__(self, register_date, first_name, last_name, birthdate, last_login, user_id, password):
@@ -117,6 +116,7 @@ print(f"Is user active? {user1.is_active()}")
 # Change password
 print(user1.change_password("newsecurepassword"))
 
+# Question 3:
 
 def is_palindrome(s):
     # Normalize the string: remove spaces and convert to lowercase
