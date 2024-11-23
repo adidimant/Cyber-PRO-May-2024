@@ -92,3 +92,12 @@ def process_and_check_numbers(str_list):
 
 input_list = ["123", "hello", "42", "7"]
 process_and_check_numbers(input_list)
+
+
+def replace_python(sntc: str):
+    result1 = None
+    result2 = 0
+    if "Python" in sntc:
+        result1 = sntc.replace("Python", "Coding")
+    result2 = result1.split(" ")
+    return result1, len(result2) - 1
