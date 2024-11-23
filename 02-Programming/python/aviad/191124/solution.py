@@ -134,6 +134,8 @@ print(is_palindrome(""))       # True
 print(is_palindrome("bba"))    # False
 
 
+# Question 4:
+
 def count_new_lines(http_body):
     # Count the occurrences of new line characters
     return http_body.count('\n')
