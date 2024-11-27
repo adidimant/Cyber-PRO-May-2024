@@ -1,4 +1,4 @@
-# Question 1:
+
 
 def analyze_string(sentence):
     if "Python" in sentence:
@@ -6,9 +6,9 @@ def analyze_string(sentence):
     else:
         modified_sentence = sentence
         space_count = sentence.count(' ')
-    return modified_sentence, space_count
+    return modified_sentence, space_count 
 
-# Question 2:
+
 
 def validate_and_extract(s):
     elements = s.split(',')
@@ -18,7 +18,7 @@ def validate_and_extract(s):
     else:
         return -1, elements
 
-# Question 3:
+
 
 def search_and_print_chars(s, char_array):
     found = False
@@ -28,7 +28,7 @@ def search_and_print_chars(s, char_array):
             found = True
     return found
 
-# Question 4:
+
 
 def advanced_string_manipulation(s):
     if len(s) < 5:
