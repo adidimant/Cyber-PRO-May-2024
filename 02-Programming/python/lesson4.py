@@ -59,8 +59,10 @@ print(bool("")) # prints 'False'
 # functions can return a boolean value:
 def myFunction() :
   return True
+def myFunction2() :
+  return True
 
-if myFunction():
+if myFunction() and myFunction2():
   print("YES!")
 else:
   print("NO!")
