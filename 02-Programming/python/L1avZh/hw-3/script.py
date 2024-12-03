@@ -32,30 +32,44 @@ class Animal:
         self.is_predator = is_predator
 
 
-# TODO: Question 2
-# class Person:
-#   def __init__(self, first_name, age):
-#     self.first_name = first_name
-#     self.age = age
-#
-#   class_type = 'person'
-#   def fun1(self):
-#     print(f'fun1 was activated for the user name: {self.first_name}')
-#
-#   def getFullDetails(self):
-#     return f"The person name: {self.first_name}, the age is: {self.age}"
-#
-#
-# class User:
-#     def __init__(self, register_date, first_name, last_name, birthdate, last_login, user_id, password):
-#         self.register_date = register_date
-#         self.first_name = first_name
-#         self.last_name = last_name
-#         self.birthdate = birthdate
-#         self.last_login = last_login
-#         self.user_id = user_id
-#         self.password = password
+import datetime
+import uuid
 
+class Person:
+  def __init__(self, first_name, last_name, birthdate):
+    self.first_name = first_name
+    self.last_name = last_name
+    self.birthdate = birthdate
+
+  def fun1(self):
+    print(f'fun1 was activated for the user name: {self.first_name}')
+
+  def get_age(self):
+      now = datetime.date.today()
+      delta = now - self.birthdate
+      return delta.days / 365
+
+  def get_full_details(self):
+    return f"The person name: {self.first_name}, the age is: {self.get_age()}"
+
+class User(Person):
+    def __init__(self, register_date, first_name, last_name, birthdate, last_login, password, email):
+        super().__init__(first_name, last_name, birthdate)
+        self.register_date = register_date
+        self.last_login = last_login
+        self.user_id = uuid.uuid4()
+        self.password = password
+        self.email = email
+
+    def check_login_credentials(self, email, password):
+        if self.email == email and self.password == password:
+            return True
+        return False
+
+    def get_activity_in_years(self):
+        now = datetime.date.today()
+        delta = now - self.register_date
+        return delta.days / 365
 
 
 def is_palindrome(string):
