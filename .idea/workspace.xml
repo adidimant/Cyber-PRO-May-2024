@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a39feb09-3e4b-4a66-83b6-72684ba50198" name="Changes" comment="python hw-2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-Programming/python/Sergiu/ser-hw/08.11.24hw.py" beforeDir="false" />
-    </list>
+    <list default="true" id="a39feb09-3e4b-4a66-83b6-72684ba50198" name="Changes" comment="python hw-2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,12 +19,12 @@
     &quot;assignee&quot;: &quot;L1avZh&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:adidimant/Cyber-PRO-May-2024.git&quot;,
-    &quot;accountId&quot;: &quot;7d5eed02-58d7-41f4-bb7e-d2c0a2decc27&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:adidimant/Cyber-PRO-MAY-2024.git",
+    "accountId": "90fa6635-b6b7-4c71-9897-0f3255cbb90a"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -56,6 +53,15 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="python hw-2">
+      <option name="closed" value="true" />
+      <created>1733253328193</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733253328193</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
