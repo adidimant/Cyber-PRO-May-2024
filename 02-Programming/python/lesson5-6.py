@@ -102,7 +102,7 @@ print('with append:', mylist)
 mylist.insert(1, "orange")
 print('with insert specific index (1):', mylist)
 mylist.remove("banana")
-print('with remove:', mylist)
+print('with remove specific value:', mylist)
 # remove specific index:
 mylist.pop(1)
 print('with remove specific index (1):', mylist)
@@ -110,4 +110,3 @@ print('with remove specific index (1):', mylist)
 mylist.clear()
 print('clearing:', mylist)
 
-# for next lesson - going over input for a software
