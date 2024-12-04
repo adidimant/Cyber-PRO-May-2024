@@ -58,3 +58,7 @@ class ElectricCar(Car):
 my_electric_car=ElectricCar("tesla","model s",2022,100,600)
 print(my_electric_car.display_info())
 print(my_electric_car.display_battery_info())
+
+
+
+
