@@ -1,0 +1,10 @@
+
+def generator ():
+  number = random.randit(0,6000000)
+  description = "The number is :" +
+str(number) + ",the return type :"
+  if number < 1000000:
+    choosen_value = bool(number)
+  elif 1000001<= number <=2000000:
+    chosen_value = [8, 10, number, 100, 900000]
+  elif 
