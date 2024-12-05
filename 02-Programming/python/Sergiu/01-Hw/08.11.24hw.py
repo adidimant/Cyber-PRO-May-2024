@@ -1,3 +1,4 @@
+#Q1
 def analyze_string(sentence):
     if "Python" in sentence:
         new_sentence = sentence.replace("Python", "Coding")
@@ -8,5 +9,8 @@ def analyze_string(sentence):
 
     return new_sentence, counter
 
-print(analyze_string("I love Python programming"))
+print(analyze_string("Question 1: String Analysis and Manipulation: Write a function that takes a sentence as input, checks if it contains the word 'Python', and performs the following operations"))
 print("----------")
+
+
+#Q2
