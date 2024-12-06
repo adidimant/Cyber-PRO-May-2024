@@ -53,18 +53,18 @@ print(mylist)
 list1 = ["a", "b", "c"]
 list2 = [1, 2, 3]
 
-#given two lists list1 & list2, join the two lists
-# option 1 - using +
+#given two lists list1 & list2, join the two lists:
+# Option 1 - using +
 list3 = list1 + list2
 print('list3', list3)
-# option 2 - using .extend():
+# Option 2 - using .extend():
 list1 = ["a", "b", "c"]
 list2 = [1, 2, 3]
 
 list1.extend(list2)
 print('list1', list1)
 
-#option 3 - using loop and append:
+#Option 3 - using loop and append:
 list1 = ["a", "b", "c"]
 list2 = [1, 2, 3]
 
@@ -243,17 +243,91 @@ for item in dict_values:
 x = thisdict.items() # x will have all the pairs of key-value: [('name', 'John'), ('age', 36), ('country', 'Norway')]
 print(x)
 
+print(list(x)[0][0]) # printing 'name'
+print(list(x)[1][0]) # printing 'age'
+
 #check if key exists in the dict:
 if "model" in thisdict:
   print("Yes, 'model' is one of the keys in the thisdict dictionary")
 
+# add/change items (key values) in an object:
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict["year"] = 2018
+# or:
+thisdict.update({"year": 2020, "owner": 'adi'}) # passing here an update object (adding/editing these keys)
+print('thisdict:', thisdict) # prints { 'brand': 'Ford', 'model': 'Mustang', 'year': 2020, 'owner': 'adi' }
 
+# Remove a specific key from an object:
+thisdict.pop('owner')
+print('thisdict after removing owner:', thisdict)
 
+#or :
+del thisdict["model"]
+print('thisdict after removing model:', thisdict)
 
+# Clearing the full object content (there's left an empty object):
+thisdict.clear()
+print("thisdict result after thisdict.clear():", thisdict)
 
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
 
+# Loop over the keys of a dict:
+for x in thisdict:
+  print(x)
 
+# Loop on the values:
+for value in thisdict.values():
+  print(value)
 
+# Loop over dict items (key, value):
+for x, y in thisdict.items():
+  print(x, y)
+
+# Creating a real copy of the dict:
+# We would like to copy a dict for cases we would like to make changes some copy, without harming the original dict
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+mydict = thisdict.copy()
+print(mydict)
+
+# Or copy using dict() class:
+mydict = dict(thisdict)
+print(mydict)
+
+# Nested dicts (objects) - objects inside objects:
+myfamily = {
+  "child1" : {
+    "name" : "Emil",
+    "year" : 2004
+  },
+  "child2" : {
+    "name" : "Tobias",
+    "year" : 2007
+  },
+  "child3" : {
+    "name" : "Linus",
+    "year" : 2011
+  }
+}
+
+# Print the name of the second child:
+print(myfamily['child2']['name'])
+
+family_members_tuples = myfamily.items()
+print(list(family_members_tuples)) # [('child1', {'name': 'Emil', 'year': 2004}), ('child2', {'name': 'Tobias', 'year': 2007}), ('child3', {'name': 'Linus', 'year': 2011})]
+child1_value = list(family_members_tuples)[0][1]
+print('child1_value', child1_value)
 
 
 
