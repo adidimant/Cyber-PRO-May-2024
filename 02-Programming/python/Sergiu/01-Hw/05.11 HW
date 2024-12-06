@@ -1,0 +1,21 @@
+
+def generator ():
+  number = random.randit(0,6000000)
+  description = "The number is :" +
+str(number) + ",the return type :"
+  if number < 1000000:
+    chosen_value = bool(number)
+  elif 1000001<= number <=2000000:
+    chosen_value = [8, 10, number, 100, 900000]
+  elif 2000001 <= number <= 3000000 :
+    chosen_value = {8, 5 'a', True, number, number + 10}
+  elif 3000001 <= NUMBER <= 4000000:   
+    chosen_value = (number, number + 10, number + 20, number +30)
+  elif 4000001 <=number <= 5000000:
+    chosen_value = float(number)
+  else : # 500001 <= number <=6000000
+    choosen_value = None
+  return description + str(type(chosen_value)),chosen_value
+
+result =generator()
+print(result)

@@ -57,7 +57,7 @@ console.log(" first 4 questions 👆👆👆 ");
 
 //2) Math.random(); // creates a random string in the range of 0 to 1
 //Create a function that return a number in the range of 0 to 100
-
+              
 console.log( Math.floor(Math.random()*101));
 console.log(" number in the range of 0 to 100👆👆👆 ");
 

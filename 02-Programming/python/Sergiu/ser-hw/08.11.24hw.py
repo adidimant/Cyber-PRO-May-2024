@@ -1,3 +1,0 @@
-def analyze_question1 ('Question 1: String Analysis and Manipulation: Write a function that takes a sentence as input, checks if it contains the word "Python", and performs the following operations: If "Python" is existing in the string - replace "Python" with "Coding". Count the number of spaces in the sentence. Return the modified string and the number of spaces.'):
-    spaces = sentence.count(' ')
-    print(spaces)
