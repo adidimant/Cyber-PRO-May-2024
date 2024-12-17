@@ -39,11 +39,8 @@ async def add_item(item: NetflixItem):
             raise HTTPException(status_code=400, detail="Item with this ID already exists.")
 
     # Add the new item to the database
-    # Custom response
-    return {
-        "message": f"Item '{item.name}' has been successfully added!",
-        "item": item
-    }
+    items_db.append(item)
+    return item
 
 # Run the server using Uvicorn (entry point)
 if __name__ == "__main__":
