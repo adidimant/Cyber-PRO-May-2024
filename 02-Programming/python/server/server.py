@@ -7,6 +7,7 @@ use also AI server (chatGPT / Claude)
 print("starts script!")
 
 from fastapi import FastAPI
+from fastapi import HTTPException
 from pydantic import BaseModel
 
 # Initialize FastAPI app
@@ -23,9 +24,11 @@ class NetflixItem(BaseModel):
     type: str # 'series' | 'movie'
     price: float
 
+
 # GET endpoint to retrieve all items
 @app.get("/items")
 async def get_items():
+    #items_db = MySQL.query("SELECT * FROM Items")
     return items_db
 
 
@@ -34,13 +37,29 @@ async def get_items():
 async def add_item(item: NetflixItem):
     # Check if item with the same ID already exists
     for existing_item in items_db:
-        print(existing_item)
         if existing_item.id == item.id:
             raise HTTPException(status_code=400, detail="Item with this ID already exists.")
 
     # Add the new item to the database
     items_db.append(item)
     return item
+
+@app.post("/items/update-item")
+async def update_item(item: NetflixItem):
+    for index, existing_item in enumerate(items_db):
+        if existing_item.id == item.id:
+            items_db[index] = item
+            return {"message": "Item updated successfully", "item": item}
+    raise HTTPException(status_code=404, detail="Item not found")
+
+@app.delete("/items/{item_id}")
+async def remove_item(item_id: str):
+    for index, existing_item in enumerate(items_db):
+        if str(existing_item.id) == item_id:
+            deleted_item = items_db.pop(index)
+            return {"message": "Item deleted successfully", "item": deleted_item}
+    raise HTTPException(status_code=404, detail="Item not found")
+
 
 # Run the server using Uvicorn (entry point)
 if __name__ == "__main__":
