@@ -1,5 +1,4 @@
 Based on the data here - https://www.programiz.com/sql/online-compiler/
-
 1) Get all the orders that the order deal is above 300$
 
 2) Get all the unique item name from the orders
