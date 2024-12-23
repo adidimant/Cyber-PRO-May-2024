@@ -1,0 +1,22 @@
+Based on the data here - https://www.programiz.com/sql/online-compiler/
+1) INSERT at least two items to each table
+
+2) Perform at least two UPDATES with a WHERE condition
+
+3) DELETE at least two records
+
+4) Built at least 1 query includes:
+    a) AVG, SUM, MIN, MAX
+    b) IN
+    c) BETWEEN
+    d) LIKE
+
+5) select all customers information that their shipping is under 'Pending' status
+
+6) get all customers information that their amount of orders is above 300$
+
+7) get unique countries of customers that they did an order above 250$
+
+8) get average age of customers that their shipping is delivered
+
+9) get min age of a customer that was buying a Keyboard
