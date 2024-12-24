@@ -43,6 +43,7 @@ VALUES
 ('Greasy Burger', 'Per Olsen', 'Gateveien 15', 'Sandnes', '4306', 'Norway'),
 ('Tasty Tee', 'Finn Egan', 'Streetroad 19B', 'Liverpool', 'L1 0AA', 'UK');
 
+--- if you insert into a table and do not specify columns - the default value will be null
 
 SELECT CustomerName, ContactName, Address
 FROM Customers

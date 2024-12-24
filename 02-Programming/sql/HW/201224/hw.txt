@@ -1,6 +1,7 @@
 Based on the data here - https://www.programiz.com/sql/online-compiler/
 1) INSERT at least two items to each table
 
+
 2) Perform at least two UPDATES with a WHERE condition
 
 3) DELETE at least two records
@@ -20,3 +21,15 @@ Based on the data here - https://www.programiz.com/sql/online-compiler/
 8) get average age of customers that their shipping is delivered
 
 9) get min age of a customer that was buying a Keyboard
+
+
+POST /api/posts/update
+{
+ postId: '',
+ description: '',
+ title: '',
+ tags: [],
+ location: '',
+}
+
+client.query(f'UPDATE posts SET description={description}, title={title}, tags={tags}, location={location} WHERE post_id={postId}')
